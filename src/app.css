@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply bg-light-gray;
+	}
+	h1 {
+		@apply text-3xl leading-8;
+	}
+	h2 {
+		@apply text-2xl leading-7;
+	}
+	h3 {
+		@apply text-xl leading-6 font-bold;
+	}
+	h4 {
+		@apply text-sm leading-4;
+	}
+	p {
+		@apply text-base leading-6;
+	}
+}

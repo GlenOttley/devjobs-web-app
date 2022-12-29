@@ -13,7 +13,7 @@
 			class="w-[50px] h-[50px] -mt-14 mb-6 flex items-center justify-center rounded-2xl"
 			style="background-color: {logoBackground};"
 		>
-			<img src="src/lib/{logo}" alt={company} />
+			<img src="src/lib/assets/logos/{logo}" alt={company} />
 		</figure>
 		<div class="flex mb-4 gap-3 text-dark-gray">
 			<p>{postedAt}</p>

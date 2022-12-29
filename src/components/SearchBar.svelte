@@ -2,6 +2,11 @@
 	import { filters } from '../store';
 	import Modal from './Modal.svelte';
 	import ActiveFilter from './ActiveFilter.svelte';
+	import iconSearchViolet from '$lib/assets/desktop/icon-search-violet.svg';
+	import iconLocation from '$lib/assets/desktop/icon-location.svg';
+	import iconFilter from '$lib/assets/mobile/icon-filter.svg';
+	import iconSearch from '$lib/assets/desktop/icon-search.svg';
+	import iconClose from '$lib/assets/mobile/icon-close.svg';
 
 	$: localFilters = {
 		position: '',
@@ -24,11 +29,7 @@
 	<div
 		class="flex items-center w-full gap-4 px-4 overflow-hidden tablet:col-span-4 laptop:col-span-5 border-opacity-30"
 	>
-		<img
-			src="src/lib/assets/desktop/icon-search-violet.svg"
-			alt="search"
-			class="hidden tablet:block"
-		/>
+		<img src={iconSearchViolet} alt="search" class="hidden tablet:block" />
 		<label for="position" class="sr-only" />
 		<input
 			bind:value={localFilters.position}
@@ -42,7 +43,7 @@
 	<div
 		class="items-center hidden col-span-4 gap-4 px-4 overflow-hidden laptop:col-span-3 tablet:border-x border-dark-gray border-opacity-30 tablet:flex"
 	>
-		<img src="src/lib/assets/desktop/icon-location.svg" alt="location" />
+		<img src={iconLocation} alt="location" />
 		<label for="location" class="sr-only" />
 		<input
 			bind:value={localFilters.location}
@@ -82,7 +83,7 @@
 			data-modal-toggle="filters-modal"
 			on:click|preventDefault={() => (showFilters = true)}
 		>
-			<img src="src/lib/assets/mobile/icon-filter.svg" alt="view all filters" />
+			<img src={iconFilter} alt="view all filters" />
 			<span class="sr-only">View all filters</span>
 		</button>
 		<button
@@ -90,7 +91,7 @@
 			on:click|preventDefault={handleSearch}
 			type="submit"
 		>
-			<img src="src/lib/assets/desktop/icon-search.svg" alt="search" class="w-5" />
+			<img src={iconSearch} alt="search" class="w-5" />
 			<span class="sr-only">Search</span>
 		</button>
 	</div>
@@ -111,7 +112,7 @@
 	<Modal on:close={() => (showFilters = false)}>
 		<fieldset>
 			<div class="flex items-center gap-4 px-6 overflow-hidden">
-				<img src="src/lib/assets/desktop/icon-location.svg" alt="location" />
+				<img src={iconLocation} alt="location" />
 				<label for="location" class="sr-only" />
 				<input
 					bind:value={localFilters.location}
@@ -120,9 +121,9 @@
 					placeholder="Filter by location..."
 					class="w-full border-b placeholder:text-gray--placeholder border-light-gray py-7"
 				/>
-				<a href="#" aria-label="close filters menu">
-					<img src="src/lib/assets/mobile/icon-close.svg" alt="" class="w-6" />
-				</a>
+				<!-- <a href="#" aria-label="close filters menu">
+					<img src={iconClose} alt="" class="w-6" />
+				</a> -->
 			</div>
 			<div class="flex items-center gap-4 p-6">
 				<input

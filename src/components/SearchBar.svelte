@@ -27,7 +27,7 @@
 	class="flex items-center grid-cols-12 mb-6 -mt-10 overflow-hidden bg-white rounded-md tablet:grid"
 >
 	<div
-		class="flex items-center w-full gap-4 px-4 overflow-hidden tablet:col-span-4 laptop:col-span-5 border-opacity-30"
+		class="flex items-center w-full gap-4 px-4 overflow-hidden tablet:col-span-4 laptop:col-span-5 border-opacity-30 py-4"
 	>
 		<img src={iconSearchViolet} alt="search" class="hidden tablet:block" />
 		<label for="position" class="sr-only" />
@@ -37,11 +37,11 @@
 			name="position"
 			id="position"
 			placeholder="Filter by title..."
-			class="w-full placeholder:text-gray--placeholder py-7 "
+			class="w-full placeholder:text-gray--placeholder py-3"
 		/>
 	</div>
 	<div
-		class="items-center hidden col-span-4 gap-4 px-4 overflow-hidden laptop:col-span-3 tablet:border-x border-dark-gray border-opacity-30 tablet:flex"
+		class="items-center hidden col-span-4 gap-4 px-4 overflow-hidden laptop:col-span-3 tablet:border-x border-dark-gray border-opacity-30 tablet:flex py-4"
 	>
 		<img src={iconLocation} alt="location" />
 		<label for="location" class="sr-only" />
@@ -51,7 +51,7 @@
 			name="location"
 			id="location"
 			placeholder="Filter by location..."
-			class="w-full border-b placeholder:text-gray--placeholder border-light-gray py-7"
+			class="w-full placeholder:text-gray--placeholder border-light-gray py-3"
 		/>
 	</div>
 	<div
@@ -63,7 +63,7 @@
 				name="fullTimeOnly"
 				id="full-time"
 				bind:checked={localFilters.fullTimeOnly}
-				class="w-6 h-6 cursor-pointer"
+				class="w-6 h-6 cursor-pointer accent-violet"
 			/>
 			<label for="full-time" class="font-bold whitespace-nowrap"
 				>Full Time<span class="hidden laptop:inline">{' '}Only</span></label

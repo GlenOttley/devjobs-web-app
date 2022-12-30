@@ -2,11 +2,11 @@
 	import { filters } from '../store';
 	import Modal from './Modal.svelte';
 	import ActiveFilter from './ActiveFilter.svelte';
-	import iconSearchViolet from '$lib/assets/desktop/icon-search-violet.svg';
-	import iconLocation from '$lib/assets/desktop/icon-location.svg';
-	import iconFilter from '$lib/assets/mobile/icon-filter.svg';
-	import iconSearch from '$lib/assets/desktop/icon-search.svg';
-	import iconClose from '$lib/assets/mobile/icon-close.svg';
+	import iconSearchViolet from '$lib/assets/icons/icon-search-violet.svg';
+	import iconLocation from '$lib/assets/icons/icon-location.svg';
+	import iconFilter from '$lib/assets/icons/icon-filter.svg';
+	import iconSearch from '$lib/assets/icons/icon-search.svg';
+	import iconClose from '$lib/assets/icons/icon-close.svg';
 
 	$: localFilters = {
 		position: '',

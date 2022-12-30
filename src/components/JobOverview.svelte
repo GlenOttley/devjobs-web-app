@@ -12,7 +12,7 @@
 			class="w-[50px] h-[50px] -mt-14 mb-6 flex items-center justify-center rounded-2xl tablet:rounded-none tablet:w-[140px] tablet:h-[140px] tablet:m-0 tablet:px-10"
 			style="background-color: {logoBackground};"
 		>
-			<img src="src/lib/{logo}" alt={company} class="tablet:w-full" />
+			<img src="logos/{logo}" alt={company} class="tablet:w-full" />
 		</figure>
 		<div class="flex flex-col items-center justify-between w-full tablet:flex-row tablet:px-10">
 			<div class="text-center tablet:text-left">
